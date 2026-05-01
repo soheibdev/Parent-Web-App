@@ -1,0 +1,17 @@
+.notifications-page { display: flex; flex-direction: column; gap: 24px; }
+
+.notif-list { display: flex; flex-direction: column; gap: 12px; }
+
+.notif-item { display: flex; align-items: center; gap: 16px; padding: 16px 20px; cursor: pointer; transition: all 0.2s; }
+.notif-item:hover { transform: translateY(-1px); }
+.notif-unread { border-color: var(--color-mint); background: #FAFFFE; }
+
+.notif-icon-box { width: 44px; height: 44px; border-radius: 12px; background: var(--color-bg); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.notif-icon-active { background: rgba(61,209,200,0.1); }
+
+.notif-content { flex: 1; }
+.notif-text { font-size: 15px; color: var(--color-ink); font-weight: 600; line-height: 1.5; }
+.notif-unread .notif-text { font-weight: 700; }
+.notif-time { font-size: 13px; color: #999; margin-top: 2px; display: block; }
+
+.notif-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-coral); flex-shrink: 0; }

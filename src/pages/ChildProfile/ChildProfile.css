@@ -1,0 +1,51 @@
+.profile-page { display: flex; flex-direction: column; gap: 24px; }
+
+.profile-hero { display: flex; align-items: center; gap: 20px; }
+.profile-avatar { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 36px; flex-shrink: 0; }
+.profile-info h3 { font-size: 24px; color: var(--color-ink); font-family: var(--font-body); font-weight: 700; }
+.profile-info p { font-size: 14px; color: #888; }
+.profile-stats { display: flex; gap: 32px; margin-right: auto; }
+.pstat { text-align: center; }
+.pstat-val { font-family: var(--font-display); font-size: 28px; display: block; }
+.pstat-lbl { font-size: 13px; color: #888; font-weight: 600; }
+
+.profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.profile-grid h3 { font-size: 18px; color: var(--color-ink); margin-bottom: 16px; font-family: var(--font-body); font-weight: 700; }
+
+.strengths-weaknesses { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.sw-section { padding: 12px; border-radius: 12px; }
+.sw-section:first-child { background: #F0FBF9; }
+.sw-section:last-child { background: #FFF0F3; }
+.sw-section h4 { display: flex; align-items: center; gap: 6px; font-size: 14px; margin-bottom: 8px; font-weight: 700; color: var(--color-ink); }
+.sw-section ul { list-style: none; }
+.sw-section li { padding: 4px 0; font-size: 13px; color: #555; }
+
+.behavior-meters { display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px; }
+.meter { display: flex; align-items: center; gap: 12px; }
+.meter-label { min-width: 120px; font-size: 14px; font-weight: 600; color: var(--color-ink); }
+.meter-bar { flex: 1; height: 10px; background: var(--color-bg); border-radius: 20px; overflow: hidden; }
+.meter-fill { height: 100%; border-radius: 20px; transition: width 0.6s ease; }
+.meter-val { font-weight: 700; font-size: 14px; color: var(--color-ink); min-width: 40px; }
+
+.behavior-notes { display: flex; flex-direction: column; gap: 12px; }
+.bnote { display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--color-border); align-items: flex-start; }
+.bnote:last-child { border-bottom: none; }
+.bnote p { font-size: 14px; color: var(--color-ink); }
+.bnote-date { font-size: 12px; color: #999; }
+
+.sport-score { display: flex; flex-direction: column; align-items: center; gap: 4px; margin-bottom: 20px; padding: 16px; background: var(--color-bg); border-radius: 16px; }
+.sport-val { font-family: var(--font-display); font-size: 36px; color: var(--color-mango); }
+.sport-lbl { font-size: 14px; color: #888; font-weight: 600; }
+.sports-list { display: flex; flex-direction: column; gap: 12px; }
+.sport-item { display: flex; align-items: center; gap: 12px; }
+.sport-name { font-weight: 600; min-width: 80px; font-size: 14px; }
+.sport-bar-wrap { flex: 1; height: 8px; background: var(--color-bg); border-radius: 20px; overflow: hidden; }
+.sport-bar { height: 100%; background: linear-gradient(90deg, var(--color-mango), var(--color-sunny)); border-radius: 20px; transition: width 0.6s ease; }
+.sport-status { font-size: 13px; color: var(--color-mint); font-weight: 600; min-width: 60px; }
+
+.teacher-notes-list { display: flex; flex-direction: column; gap: 12px; }
+.tnote { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--color-border); }
+.tnote:last-child { border-bottom: none; }
+.tnote-badge { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.tnote-content p { font-size: 14px; color: var(--color-ink); line-height: 1.5; }
+.tnote-meta { font-size: 12px; color: #999; }

@@ -1,0 +1,31 @@
+.homework-page { display: flex; flex-direction: column; gap: 24px; }
+
+.hw-filters { display: flex; gap: 12px; }
+.hw-filter { padding: 8px 20px; border-radius: 24px; border: 1px solid var(--color-border); background: white; cursor: pointer; font-family: var(--font-body); font-weight: 600; font-size: 14px; color: #888; transition: all 0.2s; }
+.hw-filter.active { background: var(--color-ink); color: white; border-color: var(--color-ink); }
+
+.hw-list { display: flex; flex-direction: column; gap: 16px; }
+.hw-card { padding: 20px; transition: transform 0.2s; }
+.hw-card:hover { transform: translateY(-2px); }
+
+.hw-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.hw-info { display: flex; align-items: center; gap: 12px; }
+.hw-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(110,197,255,0.15); display: flex; align-items: center; justify-content: center; }
+.hw-info h3 { font-size: 17px; color: var(--color-ink); font-family: var(--font-body); font-weight: 700; }
+.hw-subject { font-size: 13px; color: #888; }
+
+.hw-right { display: flex; align-items: center; gap: 12px; }
+.hw-status-badge { display: inline-flex; align-items: center; gap: 4px; padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; }
+.status-done { background: #E6FAF8; color: var(--color-mint); }
+.status-progress { background: #FFF8E6; color: #D4A017; }
+.status-pending { background: #FFF0F3; color: var(--color-coral); }
+.hw-grade { font-family: var(--font-display); font-size: 20px; color: var(--color-mint); }
+
+.hw-desc { font-size: 14px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+.hw-meta { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #999; }
+.hw-meta span { display: flex; align-items: center; gap: 4px; }
+.btn-sm { padding: 6px 14px; font-size: 13px; }
+
+.modal-detail { display: flex; flex-direction: column; gap: 12px; }
+.detail-row { font-size: 15px; color: var(--color-ink); line-height: 1.6; }
+.detail-row strong { color: var(--color-ink); }
