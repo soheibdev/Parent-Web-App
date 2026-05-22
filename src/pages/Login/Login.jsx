@@ -24,8 +24,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-card card">
         <div className="login-header">
-          <GraduationCap size={48} className="text-mango" />
-          <h1 className="text-mango">عَلِّمْني</h1>
+          <img src="/logo.png" alt="علّمني" className="login-logo-img" />
           <h2>بوابة ولي الأمر</h2>
         </div>
         {error && <div className="login-error"><AlertCircle size={18} /><span>{error}</span></div>}
